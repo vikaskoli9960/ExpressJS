@@ -1,0 +1,13 @@
+doctype html 
+html(lang="en")
+    head 
+        title Form 
+    body 
+        form(action="/form", method="post")
+            section 
+                label(for="name") Name: 
+                input(type="text" name="name" value="Vikas koli")
+            section 
+                label(for="to") To: 
+                input(type="text" name="to" value="Expressjs")
+            button(type="submit") Send

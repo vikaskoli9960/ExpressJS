@@ -1,0 +1,13 @@
+doctype html 
+html 
+    head 
+        title Signup 
+    body 
+        if(message)
+            h4 #{message}
+        h2 Signup
+        form(action="/signup" method="POST")
+            input(type="hidden" name="_method" value="PUT")
+            input(type="text" name="id" required placeholder="Please enter your username") 
+            input(type="password" name="password" required placeholder="Please enter your password") 
+            input(type="submit")
